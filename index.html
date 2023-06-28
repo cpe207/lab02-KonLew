@@ -3,58 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>My Portfolio</title>
   </head>
   <body>
-    <center>
-      <h1>My Portfolio</h1>
-
-      <a href="index.html" class="onetab"
+    <div class="d-flex d-none d-md-block" style="margin-top: 4rem">
+      <a href="index.html" class="main onetab"
         >Home
         <span class="line1"></span>
         <span></span>
         <span class="line1"></span>
         <span></span>
       </a>
-
-      <a href="Experience.html" class="twotab"
+      <a href="Experience.html" class="main twotab"
         >Experience
         <span class="line2"></span>
         <span></span>
         <span class="line2"></span>
         <span></span>
       </a>
-
-      <a href="contact.html" class="threetab"
-        >Contact Me
+      <a href="gallery.html" class="main threetab"
+        >Gallory
+        <span class="line2"></span>
+        <span></span>
+        <span class="line2"></span>
+        <span></span>
+      </a>
+      <a href="contact.html" class="main fourtab"
+        >Contact
         <span class="line3"></span>
         <span></span>
         <span class="line3"></span>
         <span></span>
       </a>
+    </div>
 
+    <div class="d-flex d-md-none justify-content-center gap-5 my-4">
+      <a href="index.html" class="small">Home </a>
+      <a href="Experience.html" class="small">Experience </a>
+      <a href="gallery.html" class="small">Gallory </a>
+      <a href="contact.html" class="small">Contact </a>
+    </div>
+
+    <center>
       <img
         src="im/mapic.jpg"
-        width="300px"
-        style="display: block; margin-top: 100px"
-        class="border"
+        width="200px"
+        height="200px"
+        style="object-fit: cover"
+        class="rounded-circle d-sm-none mt-5"
       />
-      <p>
-        Hi ! My name is Mew <br />
-        &nbsp;&nbsp;Nice to meet you all ★★★☆☆
-      </p>
-
-      <h3>Skill</h3>
     </center>
-    <div class="skill-container">
-      <h3 class="skill-header">Music</h3>
-      <p>I used to play a three-stringed musical instrument (่Cha Ke)</p>
+    <div class="display-5 d-sm-none text-center mt-3">Surangrat Teymeesak</div>
+
+    <div
+      class="d-flex justify-content-center mx-auto gap-2"
+      style="padding-top: 4rem"
+    >
+      <img
+        src="im/mapic.jpg"
+        width="200px"
+        height="200px"
+        style="object-fit: cover"
+        class="rounded-circle d-none d-sm-block"
+      />
+      <div class="my-3 d-none d-sm-block">
+        <div style="letter-spacing: 2px" class="display-5 mb-3">
+          Surangrat Teymeesak <br />
+        </div>
+        <div
+          style="
+            font-size: medium;
+            max-width: 750px;
+            letter-spacing: 2px;
+            color: #626465;
+          "
+          class="mx-1"
+        >
+          Hi ! My name is Mew. I graduated from Chiangmai University
+          demonstration school and now study Computer Engineering. Love movies,
+          series, art and sleeping all the time...<br />
+          ★&nbsp;★&nbsp;★&nbsp;☆&nbsp;☆
+        </div>
+      </div>
     </div>
 
-    <div class="skill-container">
-      <h3 class="skill-header">Sleeping</h3>
-      <p>I can sleep all day all night💤</p>
+    <h3>SKILL</h3>
+    <div style="max-width: 800px" class="mx-auto px-3">
+      <div class="d-flex border mb-3 shadow-sm">
+        <div class="borderleft">
+          <img
+            src="im/cding.webp"
+            width="250px"
+            height="200px"
+            style="object-fit: cover"
+            class="d-none d-sm-block borderleft"
+          />
+        </div>
+        <div class="p-4">
+          <p class="fw-semibold fs-5" style="letter-spacing: 2px">
+            Programming
+          </p>
+          <p style="color: #626465">
+            Coding is not fun for me. It is more like a challenge, but I try my
+            best to get an A in Basic com. I can code C++ a little bit and now I
+            study Java and Html languages.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex border mb-3 shadow-sm">
+        <div class="p-4">
+          <p class="fw-semibold fs-5" style="letter-spacing: 2px">Music</p>
+          <p style="color: #626465">
+            I have a fine experience in Zither called "Cha ke" in thai. I used
+            to play a Zither in high school. I have a love-hate relationship
+            with it.
+          </p>
+        </div>
+        <div class="borderright">
+          <img
+            src="im/Zit.jpg"
+            width="250px"
+            height="200px"
+            style="object-fit: cover"
+            class="d-none d-sm-block borderright"
+          />
+        </div>
+      </div>
+
+      <div class="d-flex border mb-3 shadow-sm">
+        <div class="borderleft">
+          <img
+            src="im/dw.jpg"
+            width="250px"
+            height="200px"
+            style="object-fit: cover"
+            class="d-none d-sm-block borderleft"
+          />
+        </div>
+        <div class="p-4">
+          <p class="fw-semibold fs-5" style="letter-spacing: 2px">Drawing</p>
+          <p style="color: #626465">
+            I really love drawing and painting. I usually practice when I am
+            bored or stressed.It helps me relax and calm.
+          </p>
+        </div>
+      </div>
     </div>
+
+    <p class="text-center text-muted m-4">
+      © 2023 mai-wai-laeo.com by Surangrat Teymeesak
+    </p>
   </body>
 </html>

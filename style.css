@@ -1,14 +1,16 @@
 h1 {
   text-align: center;
-  color: #884a39;
+  color: #272d3f;
   font-style: italic;
 }
 
 h3 {
   text-align: center;
-  color: #884a39;
-  font-style: italic;
+  text-transform: uppercase;
+  color: #272d3f;
+  letter-spacing: 2px;
   font-size: 25px;
+  padding: 50px;
 }
 
 .skill-header {
@@ -16,7 +18,7 @@ h3 {
 }
 
 .skill-container {
-  border: solid #884a39;
+  border: solid #272d3f;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -25,21 +27,33 @@ h3 {
   margin-bottom: 8px;
 }
 
-p {
+.text {
   font-family: sans-serif;
   letter-spacing: 1px;
   text-size-adjust: 20px;
 }
 
 body {
-  background-color: #e6e2d3;
+  background-color: #ebebeb;
+  /* background-image: url(im/bgbg.jpg);
+  background-size: cover; */
 }
 
 .border {
   border-radius: 25px;
 }
 
-a {
+.borderleft {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.borderright {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.main {
   position: absolute;
   transform: translate(-50%, -50%);
   width: 500px;
@@ -53,13 +67,22 @@ a {
   font-family: sans-serif;
   color: #3b3a30;
   overflow: hidden;
+}
 
-  margin-top: 20px;
+.small {
+  margin-top: 3rem;
+  font-size: small;
+  background: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  color: #3b3a30;
 }
 
 a span {
   display: block;
-  background: #dac292;
+  background: #92a3b6;
   transition: 0.2s;
 }
 
@@ -120,14 +143,19 @@ a:hover span:nth-child(4) {
 }
 
 .twotab {
+  left: 42%;
   width: 200px;
 }
 
 .threetab {
-  right: 10%;
+  left: 61%;
   width: 200px;
 }
 
+.fourtab {
+  left: 80%;
+  width: 200px;
+}
 .line1 {
   width: 100px;
 }
